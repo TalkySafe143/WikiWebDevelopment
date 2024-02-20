@@ -1,5 +1,5 @@
 # Use una imagen base que tenga Java instalado
-FROM openjdk:17
+FROM openjdk:21
 
 COPY . /app
 # Establece el directorio de trabajo
