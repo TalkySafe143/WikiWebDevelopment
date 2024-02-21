@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: galindodeployment
+  name: galindo
   namespace: thymeleaf
 spec:
   selector:
     matchLabels:
-      app: galindoapp
+      app: galindo
   replicas: 1
   template:
     metadata:
       labels:
-         app: galindoapp
+         app: galindo
     spec:
       imagePullSecrets:
          - name: github-secret
@@ -24,12 +24,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: galindoservice
+  name: galindo
   namespace: thymeleaf
 spec:
 #  type: NodePort
   selector:
-    app: galindodeployment
+    app: galindo
   ports:
     - protocol: TCP
       port: 8080
