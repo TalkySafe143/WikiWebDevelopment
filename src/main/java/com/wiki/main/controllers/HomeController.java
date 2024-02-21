@@ -12,4 +12,9 @@ public class HomeController {
         model.addAttribute("message", "¡Hola desde el controlador!");
         return "home"; // Renderiza la plantilla 'home.html' usando Thymeleaf
     }
+
+    @GetMapping("/error")
+    public String error(Model model) {
+        return "error";
+    }
 }
