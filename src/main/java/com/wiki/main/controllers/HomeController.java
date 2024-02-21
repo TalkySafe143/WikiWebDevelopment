@@ -13,6 +13,11 @@ public class HomeController {
         return "home"; // Renderiza la plantilla 'home.html' usando Thymeleaf
     }
 
+    @GetMapping("/about")
+    public String about(Model model) {
+        return "aboutus";
+    }
+
     @GetMapping("/error")
     public String error(Model model) {
         return "error";

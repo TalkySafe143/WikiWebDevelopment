@@ -9,7 +9,7 @@ spec:
    - host: gruposjaveriana.dynaco.co
      http:
        paths:
-       - path: /grupo-2-4/galindo
+       - path: /grupo-2-1/galindo
          pathType: Prefix
          backend:
            service:
