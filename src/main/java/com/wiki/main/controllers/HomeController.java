@@ -11,8 +11,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "¡Hola desde el controlador!");
-        return "home"; // Renderiza la plantilla 'home.html' usando Thymeleaf
+        return "home"; 
     }
 
     @GetMapping("/about")

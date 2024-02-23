@@ -1,8 +1,15 @@
 # Use una imagen base que tenga Java instalado
-FROM openjdk:21
+FROM node:latest
+
+RUN apt-get -y install openjdk-21-jre-headless
 
 COPY . /app
 # Establece el directorio de trabajo
+
+WORKDIR /src/main/frontend
+
+RUN npm run build
+
 WORKDIR /app
 
 # Construye el archivo JAR de la aplicación
