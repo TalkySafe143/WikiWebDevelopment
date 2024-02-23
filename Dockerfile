@@ -2,7 +2,8 @@
 FROM node:latest
 
 RUN apt-get update && \
-    apt-get install -y openjdk-17 && \
+    apt-get install -y openjdk-17-jre && \
+    apt-get install -y openjdk-17-jdk && \
     apt-get clean
 
 COPY . /app
