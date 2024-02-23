@@ -9,12 +9,11 @@ RUN apt-get update && \
 COPY . /app
 # Establece el directorio de trabajo
 
-WORKDIR /src/main/frontend
+WORKDIR /app/src/main/frontend
 
 RUN npm run build
 
 WORKDIR /app
-
 # Construye el archivo JAR de la aplicación
 RUN ./mvnw clean install -DskipTests
 
