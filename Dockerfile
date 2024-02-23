@@ -11,6 +11,7 @@ COPY . /app
 
 WORKDIR /app/src/main/frontend
 
+RUN npm install -y tailwindcss
 RUN npm run build
 
 WORKDIR /app
