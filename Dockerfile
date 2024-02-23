@@ -1,7 +1,9 @@
 # Use una imagen base que tenga Java instalado
 FROM node:latest
 
-RUN apt-get -y install openjdk-21-jre-headless
+RUN apt-get update && \
+    apt-get install -y openjdk-11-jdk && \
+    apt-get clean
 
 COPY . /app
 # Establece el directorio de trabajo
