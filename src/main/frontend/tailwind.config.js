@@ -2,7 +2,19 @@
 module.exports = {
     content: ["../resources/templates/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        maxWidth: {
+            '1/4': '25%',
+            '1/2': '50%',
+            '3/4': '75%',
+          },
+          maxHeight: {
+            '1/4': '25%',
+            '1/2': '50%',
+            '3/4': '75%',
+            
+          }
+      },
     },
     plugins: [],
   }
