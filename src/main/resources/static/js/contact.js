@@ -92,7 +92,7 @@ const contactForm = document.querySelector(".contact-form");
 inEmail.addEventListener('input', e => {
     countEmail.innerHTML = `${e.target.value.length}/100`
     let ok = true
-    if (e.target.value.length < 100) {
+    if (e.target.value.length > 100) {
         ok = false;
         hundredChars[0].innerHTML = errorPrefix + hundredChars[1];
     } else {
@@ -154,7 +154,7 @@ inFirstName.addEventListener('input', e => {
     countFirstName.innerHTML = `${e.target.value.length}/100`
     let ok = true
     
-    if (e.target.value.length < 100) {
+    if (e.target.value.length > 100) {
         ok = false;
         hundredCharsFirstName[0].innerHTML = errorPrefix + hundredCharsFirstName[1]
     } else {
@@ -175,7 +175,7 @@ inFirstName.addEventListener('input', e => {
 inSecondName.addEventListener('input', e => {
     countSecondName.innerHTML = `${e.target.value.length}/100`
     let ok = true
-    if (e.target.value.length < 100) {
+    if (e.target.value.length > 100) {
         ok = false;
         hundredCharsSecondName[0].innerHTML = errorPrefix + hundredCharsSecondName[1]
     } else {

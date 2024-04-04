@@ -727,6 +727,10 @@ video {
   max-width: 50%;
 }
 
+.max-w-1\/6 {
+  max-width: 16%;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
@@ -1004,9 +1008,9 @@ video {
      object-position: center-top;
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-2 {
@@ -1118,6 +1122,10 @@ video {
   line-height: 1.75rem;
 }
 
+.font-\[600\] {
+  font-weight: 600;
+}
+
 .font-\[900\] {
   font-weight: 900;
 }
@@ -1194,6 +1202,21 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .\*\:m-\[10px\] > * {
