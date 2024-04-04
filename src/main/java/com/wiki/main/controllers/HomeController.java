@@ -65,5 +65,9 @@ public class HomeController {
         clientService.createClient(client);
         return "success";
     }
-    
+
+    @GetMapping("/error")
+    public String errorMapping(Model model){
+        return "error";
+    }
 }
